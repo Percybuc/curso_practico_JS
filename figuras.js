@@ -46,5 +46,26 @@ function areaCirculo (radio) {
     return PI * (radio * radio);
 }
 
-
 console.groupEnd(); 
+
+
+// ------- Aquí interactuamos con el HTML ----------
+function calcularPerimetroCuadrado () {
+    const input = document.getElementById("inputCuadrado");
+    // Esto lo puedes poner en consola. Te trae TODA la etiqueta HTML con ese ID
+    const value = input.value; 
+    // Pero como nosotros solo queremos el valor de esta etiqueta, usamos input.value y la metemos en una variable
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("inputCuadrado");
+    
+    const value = input.value; 
+    
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
