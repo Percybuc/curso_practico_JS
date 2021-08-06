@@ -33,7 +33,7 @@ body {
 }
 
 /* ---------------------CUADRADO------------------- */
-.section {
+.cuadrado, .circulo, .triangulo {
     width: 300px;
     height: 500px;
     display: flex;
@@ -47,28 +47,32 @@ body {
     /* margin: 0 auto; */
     /* 0 auto (de arriba abajo 0, pero de izq-der se ajuste y se centra) */
 }
-.section--titulo {
+.cuadrado--titulo, .circulo--titulo, .triangulo--titulo {
     font-size: 2.2rem;
     color: rgb(54, 44, 44);
     margin-bottom: 30px;
 }
-.section__form {
+.triangulo__form, .circulo__form, .cuadrado__form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.section__form label {
+.cuadrado__form label, .circulo__form label {
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
-.section__form input {
+.triangulo__form label{
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+input {
     background-color: transparent;
     border-radius: 25px;
     border: rgba(255, 235, 205, 0.719) solid 1px;
-    margin-bottom: 70px;
     padding: 5px 10px;
     outline: none;
+    margin-bottom: 10px;
 }
 ::placeholder {
     color: rgba(58, 54, 48, 0.719);
@@ -83,5 +87,8 @@ body {
     cursor: pointer;
     font-weight: bold;
     background-color: rgba(255, 235, 205, 0.596);
+}
+.circulo__form input, .cuadrado__form input {
+    margin-bottom: 60px;
 }
 

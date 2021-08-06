@@ -16,9 +16,9 @@
 
     <main class="main">
         
-        <section class="section">
-            <h2 class="section--titulo">Cuadrado</h2>
-            <form class="section__form" action="">
+        <section class="cuadrado">
+            <h2 class="cuadrado--titulo">Cuadrado</h2>
+            <form class="cuadrado__form" action="">
                 <label for="inputCuadrado">
                     Lado del cuadrado
                 </label>
@@ -26,7 +26,7 @@
 
                 <button class="button" type="button" onclick="calcularPerimetroCuadrado()">
                 <!-- Type button para que no se actualice la página  cada que apretamos el botón 
-                onclick para conectar el botón con una función-->
+                onclick para conectar el botón con una función en JS-->
                     Calcular perímetro
                 </button>
                 <button class="button" type="button" onclick="calcularAreaCuadrado()">
@@ -36,9 +36,9 @@
             </form>
         </section>
 
-        <section class="section">
-            <h2 class="section--titulo">Triangulo</h2>
-            <form class="section__form" action="">
+        <section class="triangulo">
+            <h2 class="triangulo--titulo">Triangulo</h2>
+            <form class="triangulo__form" action="">
                 <label for="inputTriangulo1">
                     Lado 1 del triángulo
                 </label>
@@ -54,6 +54,11 @@
                 </label>
                 <input id="inputBaseTriangulo" type="number" >
 
+                <label for="inputAlturaTriangulo">
+                    Base del triángulo
+                </label>
+                <input id="inputAlturaTriangulo" type="number" >
+
                 <button class="button" type="button" onclick="calcularPerimetroTriangulo()">
                 <!-- Type button para que no se actualice la página  cada que apretamos el botón 
                 onclick para conectar el botón con una función-->
@@ -66,9 +71,9 @@
             </form>
         </section>
 
-        <section class="section">
-            <h2 class="section--titulo">Círculo</h2>
-            <form class="section__form" action="">
+        <section class="circulo">
+            <h2 class="circulo--titulo">Círculo</h2>
+            <form class="circulo__form" action="">
                 <label for="inputCirculo">
                     Radio del círculo
                 </label>
