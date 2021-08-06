@@ -6,33 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
-    <header>
+    <header class="header">
         <h1>Figuras geométricas</h1>
-        <p>Primero ejercicio del curso práctico de JS</p>
     </header>
 
-    <section>
-        <h2>Calcula el área y perímetro de un cuadrado</h2>
-        <form action="">
-            <label for="inputCuadrado">
-                Escribe cuanto mide cada lado de tu cuadrado
-            </label>
-            <input id="inputCuadrado" type="number" >
+    <main class="main">
+        
+        <section class="section">
+            <h2 class="section--titulo">Cuadrado</h2>
+            <form class="section__form" action="">
+                <label for="inputCuadrado">
+                    Lado del cuadrado
+                </label>
+                <input id="inputCuadrado" type="number" >
 
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-            <!-- Type button para que no se actualice la página  cada que apretamos el botón 
-            onclick para conectar el botón con una función-->
-                Calcular perímetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular el área
-            </button>
-        </form>
-    </section>
-    
+                <button class="button" type="button" onclick="calcularPerimetroCuadrado()">
+                <!-- Type button para que no se actualice la página  cada que apretamos el botón 
+                onclick para conectar el botón con una función-->
+                    Calcular perímetro
+                </button>
+                <button class="button" type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+                <p class="resultado"></p>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2 class="section--titulo">Triangulo</h2>
+            <form class="section__form" action="">
+                <label for="inputTriangulo1">
+                    Lado 1 del triángulo
+                </label>
+                <input id="inputTriangulo1" type="number" >
+                
+                <label for="inputTriangulo2">
+                    Lado 2 del triángulo
+                </label>
+                <input id="inputTriangulo2" type="number" >
+
+                <label for="inputBaseTriangulo">
+                    Base del triángulo
+                </label>
+                <input id="inputBaseTriangulo" type="number" >
+
+                <button class="button" type="button" onclick="calcularPerimetroTriangulo()">
+                <!-- Type button para que no se actualice la página  cada que apretamos el botón 
+                onclick para conectar el botón con una función-->
+                    Calcular perímetro
+                </button>
+                <button class="button" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+                <p class="resultado"></p>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2 class="section--titulo">Círculo</h2>
+            <form class="section__form" action="">
+                <label for="inputCirculo">
+                    Radio del círculo
+                </label>
+                <input id="inputCirculo" type="number" >
+
+                <button class="button" type="button" onclick="calcularPerimetroCirculo()">
+                <!-- Type button para que no se actualice la página  cada que apretamos el botón 
+                onclick para conectar el botón con una función-->
+                    Calcular perímetro
+                </button>
+                <button class="button" type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+                <p class="resultado"></p>
+            </form>
+        </section>
+    </main>
 
     <script src="./figuras.js"></script>
 </body>

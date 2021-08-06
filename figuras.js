@@ -15,11 +15,9 @@ console.groupEnd();
 //-----------Código del triángulo----------------
 console.group("Triangulos");
 
-
 function perimetroTriangulo (lado1, lado2, base) {
     return lado1 + lado2 + base;
 }
-
 
 function areaTriangulo (base, altura) {
     return (base * altura) / 2;
@@ -49,7 +47,7 @@ function areaCirculo (radio) {
 console.groupEnd(); 
 
 
-// ------- Aquí interactuamos con el HTML ----------
+// ------- Aquí interactuamos con el HTML cuadrado ----------
 function calcularPerimetroCuadrado () {
     const input = document.getElementById("inputCuadrado");
     // Esto lo puedes poner en consola. Te trae TODA la etiqueta HTML con ese ID
@@ -69,3 +67,5 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(value);
     alert(area);
 }
+
+// ------- Aquí interactuamos con el HTML triángulo ----------
