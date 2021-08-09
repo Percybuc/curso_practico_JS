@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="https://img.icons8.com/color/96/000000/minecraft-logo--v1.png" alt="Logo" />
+        <h1 class="header__titulo">Calcula tu descuento</h1>
+    </header>
+    <main class="main">
+        <section class="cuerpo">
+            <img class="cuerpo__imagen" src="https://img.icons8.com/windows/32/000000/sell.png" alt="Carro de compra"/>
+            <div class="cuerpo__datos">
+                <label for="inputPrecio">Precio</label>
+                <input id="inputPrecio" type="number" >
+                <label for="inputDescuento">Descuento</label>
+                <input id="inputDescuento" type="number">
+
+                <button class="button" type="button" onclick="calcularDescuento()">
+                <!-- type button es para que al hacerle click la pàgina no se actualice -->
+                    Calcula tu precio final ;)
+                </button>
+            </div>
+            <p id="resultado"></p>
+        </section>
+    </main>
+</body>
+
+<script src="./javaScrip.js"></script>
+</html>
