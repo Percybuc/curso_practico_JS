@@ -8,8 +8,7 @@ function calcularPromedio (lista){
         }
     );
 
-    const promedioLista = sumaLista / lista.length;
-    console.log(promedioLista);
+    return sumaLista / lista.length;
 }
 
 let lista1 = [
@@ -19,8 +18,6 @@ let lista1 = [
     800,
     40000000];
 
-let mitadLista1 = parseInt(lista1.length / 2);
-
 function esPar (numerito){
     if (numerito % 2 === 0){
         return true;
@@ -29,15 +26,20 @@ function esPar (numerito){
     }
 }
 
-let mediana;
+function calcularMediana (listado){
+    
+    let mitadListado = parseInt(listado.length / 2);
+    let mediana;
 
-if (esPar(lista1.length)) {
-    const elemento1 = lista1[mitadLista1 - 1];
-    const elemento2 = lista1[mitadLista1];
-    const caulcularPromedioE1yE2 = calcularPromedio([
-        elemento1, 
-        elemento2]);
-    mediana = caulcularPromedioE1yE2;
-} else {
-    mediana = lista1[mitadLista1];
+    if (esPar(listado.length)) {
+        const elemento1 = listado[mitadListado - 1];
+        const elemento2 = listado[mitadListado];
+        const caulcularPromedioE1yE2 = calcularPromedio([
+            elemento1, 
+            elemento2]);
+        mediana = caulcularPromedioE1yE2;
+    } else {
+        mediana = listado[mitadListado];
+    }
+    console.log(mediana);
 }
