@@ -16,8 +16,9 @@ let lista1 = [
     100, 
     200, 
     500, 
+    800,
     40000000];
-    
+
 let mitadLista1 = parseInt(lista1.length / 2);
 
 function esPar (numerito){
