@@ -20,3 +20,5 @@ function calcularPromedio (lista){
     const promedioLista = sumaLista / lista.length;
     console.log(promedioLista);
 }
+
+
