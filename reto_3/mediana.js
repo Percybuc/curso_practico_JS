@@ -24,6 +24,8 @@ function esPar (numerito){
     } else {
         return false;
     }
+    // return (numerito % 2 === 0);
+    //Poner esto es exactamente lo mismo, ya que el paréntesis ya me retorna true o false
 }
 
 function calcularMediana (listado){
